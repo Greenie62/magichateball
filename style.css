@@ -1,0 +1,79 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+body{
+    background:#999
+}
+
+.header{
+    position:relative;
+    text-align:center;
+    height:10vh;
+    background:black;
+    color:white;
+}
+
+img{
+    height:40px;
+    position:absolute;
+    right:5%;
+    transform:translate(0%,-65%);
+    cursor:pointer;
+    transition:1s;
+}
+
+img:hover{
+    transform:translate(0%,-65%) rotate(360deg)
+}
+
+.content-container{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    height:80vh;
+}
+
+.eightball{
+    position:relative;
+    height:70%;
+    width:70%;
+    margin:auto;
+    background:black;
+    border-radius:50%;
+    transition:2s;
+    clip-path:circle(20px at 0% 0%);
+    --webkit-clip-path:circle(20px at 0% 0%)
+
+}
+
+.show-ball{
+    clip-path:circle(1000px at 0% 0%);
+    --webkit-clip-path:circle(1000px at 0% 0%)
+
+}
+
+.eightball-btn{
+    height:35%;
+    width:35%;
+    position:absolute;
+    border-radius:50%;
+    background:white;
+    font-size:35px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    top:25%;
+    right:20%;
+    transition:1s;
+    cursor:pointer;
+}
+
+.eightball-btn:hover{
+    opacity:.7;
+}
+
